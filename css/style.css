@@ -5,13 +5,22 @@
     margin: 0px 0px 0px 0px;
 }
 
-nav a{
-    color: white;    
-    text-decoration: none;
+a{
+    transition-duration: 1s;
 }
 
 a:hover{
-    opacity: 0.4;
+    color: #00c198;
+    text-decoration: none;
+    transition-duration: 900ms;
+}
+
+li.page-viewing-active a{
+    color: none;
+}
+
+nav a{
+    color: white;    
     text-decoration: none;
 }
 
@@ -62,7 +71,11 @@ nav{
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 3px;
-    padding-bottom: 15px;
+    padding-bottom: 15px;    
+}
+
+#nav-bar-logo a:hover{
+    transition-duration: 2s;
 }
 
 #nav-bar-menu li{
@@ -76,8 +89,15 @@ nav{
 #nav-bar-icons{
     width: 100%;
     margin-top: 90px;
-    text-align: left;
-    
+    margin-left: 10px;
+    text-align: left;  
+}
+
+#nav-bar-icons li{
+    display: inline-block;
+    padding: 0px 30px 0px 0px;
+    font-size: 21px;
+
 }
 
 #nav-bar-icons img{
@@ -86,7 +106,7 @@ nav{
 }
 
 #nav-bar-icons a:hover{
-    opacity: 0.4;
+    color: #00c198;
     
 }
 
@@ -112,35 +132,38 @@ li{
 
 #spotlight-container{
     padding-top: 45px;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
+    width: 80%;
+    margin-left: 90px;
+    float: left;
 }
 
-.spotlight-content{
+.spotlight-text{
+    position: absolute;
+    margin-top: 70px;
+    width: 15%;
+    padding: 30px 30px 30px 30px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: white;
+    background-color: #00141e;
 }
 
 .spotlight-image img{
     width: 100%;
+    float: left;
 }
 
 #gallery-container{
-    width: 90%;
+    width: 80%;
     height: auto;
-    margin: 0 auto;
+    margin-left: 90px;
+    padding-bottom: 100px;
 }
-
-.gallery-content-container{
-    margin: 0 auto;
-    width: 100%;
-}
-
 
 .gallery-content{
-    width: 40%;
+    width: 43.2%;
     display: inline-block;
-    margin: 0 auto;
-    padding: 30px;
+    padding: 30px 30px 30px 30px;
 }
 
 .gallery-image{
@@ -153,7 +176,7 @@ li{
 }
 
 .gallery-text{
-    text-align: center;
+    text-align: left;
     bottom: 350px;
     color: black;
     font-size: 10px;
